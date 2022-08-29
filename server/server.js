@@ -23,7 +23,7 @@ const server = new ApolloServer({
   // Add context to our server so data from the `authMiddleware()` function can pass data to our resolver functions
   context: authMiddleware,
 });
-server.applyMiddleware({ app });
+// server.applyMiddleware({ app });
 /// the above two lines are new
 
 app.use(express.urlencoded({ extended: false }));
